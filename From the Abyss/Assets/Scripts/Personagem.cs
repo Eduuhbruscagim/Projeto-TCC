@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Personagem : MonoBehaviour
 {
+    private Animator PersonagemAnim;
     private Rigidbody2D rbPersonagem;
     public float Speed = 5f;
     private SpriteRenderer spriteRenderer;
@@ -12,6 +13,7 @@ public class Personagem : MonoBehaviour
 
     void Start()
     {
+        PersonagemAnim = GetComponent<Animator>();
         rbPersonagem = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -33,11 +35,17 @@ public class Personagem : MonoBehaviour
 
         if (MovimentoHorizontal > 0)
         {
+            PersonagemAnim.SetBool("Andar", true);
             spriteRenderer.flipX = false;
         }
         else if (MovimentoHorizontal < 0)
         {
+            PersonagemAnim.SetBool("Andar", true);
             spriteRenderer.flipX = true;
+        }
+        else
+        {
+            PersonagemAnim.SetBool("Andar", false);
         }
     }
 
@@ -46,6 +54,7 @@ public class Personagem : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && NoChao)
         {
+            PersonagemAnim.SetBool("Jump", true);
             rbPersonagem.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
             NoChao = false;
         }
@@ -57,6 +66,7 @@ public class Personagem : MonoBehaviour
     {
         if (collision.gameObject.name == "Ground")
         {
+            PersonagemAnim.SetBool("Jump", false);
             NoChao = true;
         }
     }
