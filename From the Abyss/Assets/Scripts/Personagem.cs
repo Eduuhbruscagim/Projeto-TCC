@@ -10,6 +10,7 @@ public class Personagem : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public float JumpForce;
     public bool NoChao = true;
+    public bool PuloDuplo;
 
     void Start()
     {
@@ -25,7 +26,7 @@ public class Personagem : MonoBehaviour
 
     void Update()
     {
-        Jump();  
+        Jump();
     }
 
     void MoverPersonagem()
@@ -52,11 +53,25 @@ public class Personagem : MonoBehaviour
     void Jump()
     {
 
-        if (Input.GetButtonDown("Jump") && NoChao)
+        if (Input.GetButtonDown("Jump"))
         {
-            PersonagemAnim.SetBool("Jump", true);
-            rbPersonagem.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
-            NoChao = false;
+            if (NoChao)
+            {
+                rbPersonagem.velocity = Vector2.zero;
+                PersonagemAnim.SetBool("Jump", true);
+                rbPersonagem.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+                NoChao = false;
+                PuloDuplo = true;
+            }
+
+            else if (!NoChao && PuloDuplo)
+            {
+                rbPersonagem.velocity = Vector2.zero;
+                PersonagemAnim.SetBool("Jump", true);
+                rbPersonagem.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+                NoChao = false;
+                PuloDuplo = false;
+            }
         }
 
 
@@ -68,6 +83,7 @@ public class Personagem : MonoBehaviour
         {
             PersonagemAnim.SetBool("Jump", false);
             NoChao = true;
+            PuloDuplo = false;
         }
     }
 
