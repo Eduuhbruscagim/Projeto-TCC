@@ -11,6 +11,7 @@ public class Personagem : MonoBehaviour
     public float JumpForce;
     public bool NoChao = true;
     public bool PuloDuplo;
+    public int Moedas;
 
     void Start()
     {
@@ -87,4 +88,12 @@ public class Personagem : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Moedas")
+        {
+            Destroy(collision.gameObject);
+            Moedas++;
+        }
+    }
 }
