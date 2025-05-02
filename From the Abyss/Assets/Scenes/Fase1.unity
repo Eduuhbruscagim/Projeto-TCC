@@ -5496,7 +5496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Personagem: {fileID: 1873189018}
   minX: 0.1
-  maxX: 40
+  maxX: 50
 --- !u!1 &770468002
 GameObject:
   m_ObjectHideFlags: 0
