@@ -11,11 +11,14 @@ public class Personagem : MonoBehaviour
     public float JumpForce;
     public bool NoChao = true;
     public bool PuloDuplo;
-    public int Moedas;
+
+    private ControladorJogo ControladorPersonagem;
 
 
     void Start()
     {
+        ControladorPersonagem = ControladorJogo.Controlador;
+        ControladorPersonagem.Moedas = 0;
         PersonagemAnim = GetComponent<Animator>();
         rbPersonagem = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -105,7 +108,8 @@ public class Personagem : MonoBehaviour
         if (collision.gameObject.tag == "Moedas")
         {
             Destroy(collision.gameObject); // Destrói o objeto da moeda
-            Moedas++; // Adiciona o contador de moedas
+            ControladorPersonagem.Moedas++; // Adiciona o contador de moedas
+            ControladorPersonagem.TextoMoeda.text = ControladorPersonagem.Moedas.ToString();
         }
     }
 }
