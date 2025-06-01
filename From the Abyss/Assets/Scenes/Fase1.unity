@@ -1315,6 +1315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5072847441930746911, guid: 58dc827d8e85f6348964e87aaa8291d6, type: 3}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 1389134916}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2008,6 +2012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5072847441930746911, guid: 58dc827d8e85f6348964e87aaa8291d6, type: 3}
+      propertyPath: SpawnPoint
+      value: 
+      objectReference: {fileID: 1389134916}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
