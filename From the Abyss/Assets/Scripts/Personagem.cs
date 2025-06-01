@@ -90,16 +90,22 @@ public class Personagem : MonoBehaviour
     }
 
     // Verifica as colisões com o chão para permitir pular novamente
-    private void OnCollisionEnter2D(Collision2D collision)
+private void OnCollisionEnter2D(Collision2D collision)
+{
+    // Se colidir com o TETO, IGNORA
+    if (collision.gameObject.name == "Teto")
     {
-        // Se o personagem colidir com o objeto "Ground"
-        if (collision.gameObject.name == "Ground")
-        {
-            PersonagemAnim.SetBool("Jump", false); // Desativa a animação de pulo
-            NoChao = true; // Marca que o personagem está no chão
-            PuloDuplo = false; // Desabilita o pulo duplo, pois o personagem tocou o chão
-        }
+        return;
     }
+
+    // Se colidir com o chão (Ground)
+    if (collision.gameObject.name == "Ground")
+    {
+        PersonagemAnim.SetBool("Jump", false); // Desativa a animação de pulo
+        NoChao = true; // Marca que o personagem está no chão
+        PuloDuplo = false; // Desabilita o pulo duplo, pois o personagem tocou o chão
+    }
+}
 
     // Verifica as colisões com objetos marcados com a tag "Moedas"
     private void OnTriggerEnter2D(Collider2D collision)

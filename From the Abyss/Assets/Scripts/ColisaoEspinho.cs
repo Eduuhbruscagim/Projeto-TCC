@@ -9,8 +9,12 @@ public class ColisaoEspinho : MonoBehaviour
         // Verifica se o objeto que colidiu com o espinho tem o nome "Personagem"
         if (collision.gameObject.name == "Personagem")
         {
-            // Quando o personagem colide com o espinho, reposiciona ele para o ponto de reinício (SpawnPoint)
+            // Reposiciona o personagem no ponto de reinício
             collision.gameObject.transform.position = SpawnPoint.position;
+
+            // Garante que o personagem esteja sempre olhando para a direita
+            SpriteRenderer spriteRendererPersonagem = collision.gameObject.GetComponent<SpriteRenderer>();
+            spriteRendererPersonagem.flipX = false;
         }
     }
 }
