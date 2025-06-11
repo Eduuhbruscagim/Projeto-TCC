@@ -1,1 +1,1 @@
-Repositório para todos do grupo terem acesso ao projeto do jogo
+Repositório do meu Jogo em C#
