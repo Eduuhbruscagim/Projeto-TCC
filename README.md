@@ -49,11 +49,6 @@ Para abrir e executar este projeto, você precisará ter o Unity Hub e o Unity E
 - **Linguagem de Programação**: C#
 
 
-## Autor(es)
+## Autor
 
-- Eduardo Guilherme Bruscagim -
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes. (Se aplicável, caso contrário, remova esta seção ou altere a licença).
-
+- Eduardo Guilherme Bruscagim
