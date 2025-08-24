@@ -23,7 +23,7 @@ Para abrir e executar este projeto, você precisará ter o Unity Hub e o Unity E
 
 1.  **Clone o repositório:**
     ```bash
-    git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+    git clone https://github.com/Eduuhbruscagim/Projeto-TCC.git
     ```
     (Substitua `SEU_USUARIO` e `SEU_REPOSITORIO` pelos dados corretos do seu repositório)
 
