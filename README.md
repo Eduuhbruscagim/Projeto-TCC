@@ -48,19 +48,10 @@ Para abrir e executar este projeto, você precisará ter o Unity Hub e o Unity E
 - **Motor de Jogo**: Unity 2022.3.15f1
 - **Linguagem de Programação**: C#
 
-## Contribuições
-
-Sinta-se à vontade para contribuir com o projeto. Para isso, siga os passos:
-
-1.  Faça um fork do repositório.
-2.  Crie uma nova branch (`git checkout -b feature/sua-feature`).
-3.  Faça suas alterações e commit (`git commit -m 'Adiciona nova funcionalidade'`).
-4.  Envie para a branch original (`git push origin feature/sua-feature`).
-5.  Abra um Pull Request.
 
 ## Autor(es)
 
-- [Seu Nome/Nome da Equipe] - [Link para o GitHub/LinkedIn/Portfólio]
+- Eduardo Guilherme Bruscagim -
 
 ## Licença
 
