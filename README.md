@@ -6,11 +6,12 @@ Este é um jogo 2D desenvolvido na Unity como parte de um projeto de TCC. O jogo
 
 ## Funcionalidades
 
-- Movimentação do personagem (esquerda/direita)
+- Movimentação do personagem
 - Pulo e pulo duplo
 - Coleta de moedas
-- Detecção de colisão com obstáculos (espinhos)
-- Transições de cena (Menu, Splash, Fase 1)
+- Dash
+- Detecção de colisão com obstáculos
+- Transições de cenas
 
 ## Como Jogar
 
@@ -19,7 +20,7 @@ Este é um jogo 2D desenvolvido na Unity como parte de um projeto de TCC. O jogo
 
 ## Instalação e Configuração
 
-Para abrir e executar este projeto, você precisará ter o Unity Hub e o Unity Editor instalados (versão utilizada: 2022.3.15f1).
+Para abrir e executar este projeto, você precisará ter o Unity Hub e o Unity Editor instalados (versão utilizada: 2022.3.62f1).
 
 1.  **Clone o repositório:**
     ```bash
@@ -41,12 +42,13 @@ Para abrir e executar este projeto, você precisará ter o Unity Hub e o Unity E
 - `Assets/Scripts`: Contém todos os scripts C# para a lógica do jogo (movimentação do personagem, controle de jogo, etc.).
 - `Assets/Prefabs`: Contém objetos reutilizáveis do jogo.
 - `Assets/Animations`: Contém as animações dos personagens e objetos.
-- `Assets/Sprites`: Contém os recursos visuais (imagens) do jogo.
+- `Assets/Sprites`: Contém os recursos visuais do jogo.
 
 ## Tecnologias Utilizadas
 
-- **Motor de Jogo**: Unity 2022.3.15f1
+- **Motor de Jogo**: Unity 2022.3.62f1
 - **Linguagem de Programação**: C#
+- **Design** : Photoshop, Pixilart, Aseprite, Figma
 
 
 ## Autor
