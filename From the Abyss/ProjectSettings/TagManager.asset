@@ -40,10 +40,13 @@ TagManager:
   - 
   m_SortingLayers:
   - name: Background
-    uniqueID: 2906873257
+    uniqueID: 3287888829
     locked: 0
-  - name: Mid Ground
-    uniqueID: 3511467961
+  - name: MidGround
+    uniqueID: 3521293833
+    locked: 0
+  - name: Objetos
+    uniqueID: 1764039799
     locked: 0
   - name: Default
     uniqueID: 0
