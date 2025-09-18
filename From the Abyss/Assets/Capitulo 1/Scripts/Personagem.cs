@@ -11,16 +11,16 @@ public class Personagem : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     [Header("Movimento")]
-    public float Speed = 4f;
+    public float Speed = 2f;
 
-    public float JumpForce = 7;
+    public float JumpForce = 6;
 
     public bool NoChao = true;
 
     public bool PuloDuplo;
 
     [Header("Dash")]
-    public float DashForce = 12f; // Velocidade do dash
+    public float DashForce = 10f; // Velocidade do dash
 
     public float DashTime = 0.1f; // Duração do dash
 
