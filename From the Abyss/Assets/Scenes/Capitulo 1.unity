@@ -11742,6 +11742,10 @@ PrefabInstance:
       value: Teto
       objectReference: {fileID: 0}
     - target: {fileID: -7709719242852286704, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
+      propertyPath: m_TagString
+      value: Ceiling
+      objectReference: {fileID: 0}
+    - target: {fileID: -7709719242852286704, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11762,6 +11766,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: -227027761579063476, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: -227027761579063476, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11771,6 +11779,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 804552810505200191, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
       propertyPath: m_Name
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 804552810505200191, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
+      propertyPath: m_TagString
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 804552810505200191, guid: 322c35bce3b751e43a459427dc7602c7, type: 3}
@@ -12513,7 +12525,7 @@ GameObject:
   - component: {fileID: 1873189013}
   m_Layer: 0
   m_Name: Personagem
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
