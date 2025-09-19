@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -259,6 +263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -295,6 +303,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -608,6 +620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Placa
       objectReference: {fileID: 0}
+    - target: {fileID: 7582682647569493046, guid: bb9e5cfdf38b17f40930c34bfbeb5201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -707,6 +723,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1019,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1080,6 +1104,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingLayer
@@ -1149,6 +1177,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1274,6 +1306,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1336,6 +1372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1376,7 +1416,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &367646534
 Transform:
@@ -1476,6 +1516,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1590,6 +1634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1646,6 +1694,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1783,6 +1835,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1948,6 +2004,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho
       objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.019864218
@@ -2029,7 +2089,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &449124593
 Transform:
@@ -2236,6 +2296,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2473,7 +2537,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.7997913, y: 3.17013, z: -20}
+  m_LocalPosition: {x: -5.732459, y: 3.17013, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2588,6 +2652,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -2906,6 +2974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2962,6 +3034,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingLayer
@@ -3057,7 +3133,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &655030678
 Transform:
@@ -3178,6 +3254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3240,6 +3320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3296,6 +3380,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3464,6 +3552,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho
       objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.048530478
@@ -3578,6 +3670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3675,7 +3771,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &851137031
 Transform:
@@ -3775,6 +3871,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -3907,6 +4007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -3956,6 +4060,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -4113,6 +4221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4154,6 +4266,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -4312,6 +4428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4412,6 +4532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Placa
       objectReference: {fileID: 0}
+    - target: {fileID: 7582682647569493046, guid: bb9e5cfdf38b17f40930c34bfbeb5201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4505,6 +4629,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -4765,6 +4893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Placa
       objectReference: {fileID: 0}
+    - target: {fileID: 7582682647569493046, guid: bb9e5cfdf38b17f40930c34bfbeb5201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4836,6 +4968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4896,6 +5032,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingLayer
@@ -4971,6 +5111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5012,6 +5156,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -5114,6 +5262,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5175,6 +5327,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5298,6 +5454,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5428,6 +5588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5453,7 +5617,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1319537394
 Transform:
@@ -5553,6 +5717,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -5755,6 +5923,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho
       objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.019864218
@@ -5868,6 +6040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5929,6 +6105,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10880,6 +11060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11008,6 +11192,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11277,6 +11465,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho
       objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.048530478
@@ -11484,6 +11676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 876927435425849828, guid: 6f38bf5f95e62bc408c0b6c2cf0334df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 2882054760287403274, guid: 6f38bf5f95e62bc408c0b6c2cf0334df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.3116226
@@ -11657,6 +11853,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho
       objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.03788569
@@ -11819,6 +12019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Espinho
       objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.04376576
@@ -11929,6 +12133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11975,6 +12183,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -12227,6 +12439,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12488,6 +12704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingLayer
       value: 0
@@ -12553,6 +12773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12609,6 +12833,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12691,6 +12919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Placa
       objectReference: {fileID: 0}
+    - target: {fileID: 7582682647569493046, guid: bb9e5cfdf38b17f40930c34bfbeb5201, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12732,6 +12964,10 @@ PrefabInstance:
     - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_Name
       value: Espinho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987647444439604128, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4565565924765626908, guid: e41afad7600d24c4f875e3c0331e4c2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -12920,6 +13156,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingOrder
@@ -13210,7 +13450,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2052812604
 Transform:
@@ -13420,6 +13660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grama
       objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 8348356401843757315, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_SortingOrder
       value: 0
@@ -13480,6 +13724,10 @@ PrefabInstance:
     - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
       propertyPath: m_Name
       value: Grama
+      objectReference: {fileID: 0}
+    - target: {fileID: 3629893285220086075, guid: a97def8beb00dc14cb8908a8cf867de0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
