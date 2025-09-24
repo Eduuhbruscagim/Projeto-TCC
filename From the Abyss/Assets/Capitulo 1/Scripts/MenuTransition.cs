@@ -9,7 +9,7 @@ public class MenuTransition : MonoBehaviour
 
     public void LoadCapitulo1()
     {
-        StartCoroutine(FadeOutAndLoad("Capitulo1"));
+        StartCoroutine(FadeOutAndLoad("Capitulo 1")); // Certifique-se do nome exato da cena
     }
 
     IEnumerator FadeOutAndLoad(string sceneName)
@@ -31,6 +31,7 @@ public class MenuTransition : MonoBehaviour
 
         CanvasGroup.alpha = endAlpha;
 
-        SceneManager.LoadScene("Capitulo 1");
+        // Agora usa o parâmetro passado
+        SceneManager.LoadScene(sceneName);
     }
 }
