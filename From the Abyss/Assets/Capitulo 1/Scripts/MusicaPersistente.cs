@@ -11,7 +11,6 @@ public class MusicaManager : MonoBehaviour
 
     void Awake()
     {
-        // Garantir que só exista uma instância
         if (instancia != null)
         {
             Destroy(gameObject);
@@ -22,10 +21,11 @@ public class MusicaManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         audioSource = GetComponent<AudioSource>();
-        audioSource.clip = musicaSplashMenu;
-        audioSource.Play();
 
-        // Detecta mudanças de cena
+        // Já configura a música certa com base na cena atual
+        DefinirMusica(SceneManager.GetActiveScene().name);
+
+        // Continua reagindo a mudanças de cena
         SceneManager.sceneLoaded += OnCenaCarregada;
     }
 
@@ -36,8 +36,12 @@ public class MusicaManager : MonoBehaviour
 
     private void OnCenaCarregada(Scene cena, LoadSceneMode modo)
     {
-        // Troca música automaticamente dependendo da cena
-        if (cena.name == "Capitulo 1")
+        DefinirMusica(cena.name);
+    }
+
+    private void DefinirMusica(string nomeCena)
+    {
+        if (nomeCena == "Capitulo 1")
         {
             if (audioSource.clip != musicaCapitulo1)
             {
@@ -46,7 +50,7 @@ public class MusicaManager : MonoBehaviour
                 audioSource.Play();
             }
         }
-        else if (cena.name == "Splash" || cena.name == "Menu")
+        else if (nomeCena == "Splash" || nomeCena == "Menu")
         {
             if (audioSource.clip != musicaSplashMenu)
             {
