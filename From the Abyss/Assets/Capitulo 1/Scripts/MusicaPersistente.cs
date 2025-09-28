@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MusicaManager : MonoBehaviour
 {
@@ -21,8 +22,9 @@ public class MusicaManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         audioSource = GetComponent<AudioSource>();
+        audioSource.loop = true;
 
-        // Já configura a música certa com base na cena atual
+        // Configura a música certa ao iniciar
         DefinirMusica(SceneManager.GetActiveScene().name);
 
         // Continua reagindo a mudanças de cena
@@ -45,19 +47,69 @@ public class MusicaManager : MonoBehaviour
         {
             if (audioSource.clip != musicaCapitulo1)
             {
-                audioSource.Stop();
-                audioSource.clip = musicaCapitulo1;
-                audioSource.Play();
+                TrocarMusicaComFade(musicaCapitulo1, 1.5f);
             }
         }
         else if (nomeCena == "Splash" || nomeCena == "Menu")
         {
             if (audioSource.clip != musicaSplashMenu)
             {
-                audioSource.Stop();
-                audioSource.clip = musicaSplashMenu;
-                audioSource.Play();
+                TrocarMusicaComFade(musicaSplashMenu, 1.5f);
             }
         }
+        else if (nomeCena == "Final") // cena final
+        {
+            FadeOutMusica(5f); // tempo em segundos para sumir o som
+        }
+    }
+
+    private void TrocarMusicaComFade(AudioClip novaMusica, float duracao)
+    {
+        StartCoroutine(FadeTrocaMusica(novaMusica, duracao));
+    }
+
+    private IEnumerator FadeTrocaMusica(AudioClip novaMusica, float duracao)
+    {
+        if (audioSource.isPlaying)
+        {
+            // Fade-out
+            float startVolume = audioSource.volume;
+            for (float t = 0; t < duracao; t += Time.deltaTime)
+            {
+                audioSource.volume = Mathf.Lerp(startVolume, 0, t / duracao);
+                yield return null;
+            }
+            audioSource.Stop();
+        }
+
+        // Troca e dá fade-in
+        audioSource.clip = novaMusica;
+        audioSource.Play();
+        for (float t = 0; t < duracao; t += Time.deltaTime)
+        {
+            audioSource.volume = Mathf.Lerp(0, 1, t / duracao);
+            yield return null;
+        }
+        audioSource.volume = 1f;
+    }
+
+    private void FadeOutMusica(float duracao)
+    {
+        StartCoroutine(FadeOutCoroutine(duracao));
+    }
+
+    private IEnumerator FadeOutCoroutine(float duracao)
+    {
+        float startVolume = audioSource.volume;
+
+        for (float t = 0; t < duracao; t += Time.deltaTime)
+        {
+            audioSource.volume = Mathf.Lerp(startVolume, 0, t / duracao);
+            yield return null;
+        }
+
+        audioSource.volume = 0f;
+        audioSource.Stop();
+        audioSource.clip = null;
     }
 }
