@@ -93,7 +93,7 @@ public class MusicaManager : MonoBehaviour
         audioSource.volume = 1f;
     }
 
-    private void FadeOutMusica(float duracao)
+    public void FadeOutMusica(float duracao)
     {
         StartCoroutine(FadeOutCoroutine(duracao));
     }
