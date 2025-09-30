@@ -2,176 +2,231 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Personagem : MonoBehaviour
 {
-    // Componentes do personagem
-    private Animator PersonagemAnim;
+    #region Variáveis e Componentes
+
+    // --- Referências de Componentes ---
+    private Animator personagemAnim;
     private Rigidbody2D rbPersonagem;
     private SpriteRenderer spriteRenderer;
+    private ControladorJogo controladorPersonagem;
+
+    // --- Variáveis Públicas Configuráveis ---
 
     [Header("Movimento")]
+    [Tooltip("A velocidade de movimento horizontal do personagem.")]
     public float Speed = 2f;
+    [Tooltip("A força aplicada no pulo inicial.")]
     public float JumpForce = 6;
-    public bool NoChao = true;
-    public bool PuloDuplo;
 
     [Header("Dash")]
-    public float DashForce = 10f; 
-    public float DashTime = 0.1f; 
-    public float DashCooldown = 1f; 
+    [Tooltip("A força do impulso do dash.")]
+    public float DashForce = 10f;
+    [Tooltip("A duração do dash em segundos.")]
+    public float DashTime = 0.1f;
+    [Tooltip("O tempo de espera (cooldown) entre um dash e outro.")]
+    public float DashCooldown = 1f;
+
+    // --- Variáveis de Estado Privadas ---
+    private bool noChao = true;
+    public bool EstaNoChao { get { return noChao; } }
+    private bool puloDuplo;
     private bool isDashing = false;
     private float dashTimeLeft;
     private float lastDashTime;
     private Vector2 dashDirection;
-
-    // Controlador do jogo
-    private ControladorJogo ControladorPersonagem;
-
-    // Input horizontal armazenado
     private float moveInput;
 
-    void Start()
-    {
-        ControladorPersonagem = ControladorJogo.Controlador;
-        ControladorPersonagem.Moedas = 0;
+    #endregion
 
-        PersonagemAnim = GetComponent<Animator>();
+    #region Métodos do Ciclo de Vida da Unity
+
+    private void Start()
+    {
+        // Inicializa as referências dos componentes
+        personagemAnim = GetComponent<Animator>();
         rbPersonagem = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // Encontra o controlador do jogo e zera as moedas
+        controladorPersonagem = ControladorJogo.Controlador;
+        controladorPersonagem.Moedas = 0;
     }
 
-    void Update()
+    private void Update()
     {
+        // Lê os inputs do jogador a cada frame
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        Jump(); 
-        HandleDashInput(); 
+        // Chama as funções que dependem de inputs de frame a frame
+        Jump();
+        HandleDashInput();
     }
 
     private void FixedUpdate()
     {
+        // Funções de física são chamadas no FixedUpdate
         if (!isDashing)
+        {
             MoverPersonagem();
+        }
         else
         {
-            // Raycast para frente para detectar colisão durante o dash
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, dashDirection, DashForce * Time.fixedDeltaTime, LayerMask.GetMask("Ground"));
-            
-            if (dashTimeLeft > 0 && hit.collider == null)
-            {
-                rbPersonagem.velocity = dashDirection * DashForce;
-                dashTimeLeft -= Time.fixedDeltaTime;
-            }
-            else
-            {
-                isDashing = false;
-                rbPersonagem.gravityScale = 3; // volta gravidade
-            }
+            Dash();
         }
 
-        // Better Jump - gravidade variável
-        if (rbPersonagem.velocity.y < 0)
-            rbPersonagem.gravityScale = 2f; // descendo rápido
-        else if (rbPersonagem.velocity.y > 0 && !Input.GetButton("Jump"))
-            rbPersonagem.gravityScale = 4f; // subindo mas soltou botão
-        else
-            rbPersonagem.gravityScale = 3f; // gravidade padrão
+        // Aplica a lógica de pulo com gravidade variável
+        HandleBetterJump();
     }
 
-    void MoverPersonagem()
+    #endregion
+
+    #region Movimentação e Ações
+
+    
+    // Aplica o movimento horizontal ao personagem com base no input.
+    
+    private void MoverPersonagem()
     {
         rbPersonagem.velocity = new Vector2(moveInput * Speed, rbPersonagem.velocity.y);
 
-        if (moveInput > 0)
+        // Controla a animação de andar e a direção do sprite
+        if (moveInput != 0)
         {
-            PersonagemAnim.SetBool("Andar", true);
-            spriteRenderer.flipX = false;
-        }
-        else if (moveInput < 0)
-        {
-            PersonagemAnim.SetBool("Andar", true);
-            spriteRenderer.flipX = true;
+            personagemAnim.SetBool("Andar", true);
+            spriteRenderer.flipX = moveInput < 0;
         }
         else
-            PersonagemAnim.SetBool("Andar", false);
+        {
+            personagemAnim.SetBool("Andar", false);
+        }
     }
 
-    void Jump()
+    
+    // Gerencia a lógica do pulo e do pulo duplo.
+    
+    private void Jump()
     {
         if (Input.GetButtonDown("Jump"))
         {
-            if (NoChao)
+            if (noChao)
             {
-                // Primeiro pulo
-                float jumpForceActual = JumpForce;
                 rbPersonagem.velocity = new Vector2(rbPersonagem.velocity.x, 0);
-                PersonagemAnim.SetBool("Jump", true);
-                rbPersonagem.AddForce(Vector2.up * jumpForceActual, ForceMode2D.Impulse);
+                personagemAnim.SetBool("Jump", true);
+                rbPersonagem.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
 
-                NoChao = false;
-                PuloDuplo = true;
+                noChao = false;
+                puloDuplo = true;
             }
-            else if (!NoChao && PuloDuplo)
+            else if (puloDuplo)
             {
-                // Segundo pulo mais suave
-                float jumpForceActual = JumpForce * 0.8f;
                 rbPersonagem.velocity = new Vector2(rbPersonagem.velocity.x, 0);
-                PersonagemAnim.SetBool("Jump", true);
-                rbPersonagem.AddForce(Vector2.up * jumpForceActual, ForceMode2D.Impulse);
+                personagemAnim.SetBool("Jump", true);
+                rbPersonagem.AddForce(Vector2.up * (JumpForce * 0.8f), ForceMode2D.Impulse);
 
-                PuloDuplo = false;
+                puloDuplo = false;
             }
-        }
-
-        // Variable height - segura o botão para subir mais
-        if (Input.GetButton("Jump") && rbPersonagem.velocity.y > 0)
-        {
-            rbPersonagem.velocity += Vector2.up * 0.08f; // pequeno impulso extra enquanto segura
         }
     }
 
-    void HandleDashInput()
+    
+    // Ouve o input do dash e inicia a ação se as condições forem atendidas.
+    
+    private void HandleDashInput()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && Time.time >= lastDashTime + DashCooldown)
         {
-            dashDirection = new Vector2(
-                Input.GetAxisRaw("Horizontal"),
-                Input.GetAxisRaw("Vertical")
-            ).normalized;
+            float direcaoX = Input.GetAxisRaw("Horizontal");
+            float direcaoY = Input.GetAxisRaw("Vertical");
 
-            if (dashDirection == Vector2.zero) 
-                dashDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+            // Bloqueia o dash para cima
+            if (direcaoY > 0)
+            {
+                direcaoY = 0;
+            }
+
+            dashDirection = new Vector2(direcaoX, direcaoY).normalized;
+
+            // Cláusula de guarda: se não houver input de direção, não faz nada.
+            if (dashDirection == Vector2.zero)
+            {
+                return;
+            }
 
             isDashing = true;
             dashTimeLeft = DashTime;
             lastDashTime = Time.time;
-            rbPersonagem.gravityScale = 0; 
-            rbPersonagem.velocity = dashDirection * DashForce;
+            rbPersonagem.gravityScale = 0;
         }
     }
 
+    
+    // Aplica a força do dash enquanto ele estiver ativo.
+    
+    private void Dash()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dashDirection, DashForce * Time.fixedDeltaTime, LayerMask.GetMask("Ground"));
+
+        if (dashTimeLeft > 0 && hit.collider == null)
+        {
+            rbPersonagem.velocity = dashDirection * DashForce;
+            dashTimeLeft -= Time.fixedDeltaTime;
+        }
+        else
+        {
+            isDashing = false;
+        }
+    }
+
+    
+    // Melhora a sensação do pulo ajustando a gravidade dinamicamente.
+    
+    private void HandleBetterJump()
+    {
+        if (isDashing) return; // Não aplica gravidade extra durante o dash
+
+        if (rbPersonagem.velocity.y < 0)
+        {
+            rbPersonagem.gravityScale = 2f; // Descendo mais rápido
+        }
+        else if (rbPersonagem.velocity.y > 0 && !Input.GetButton("Jump"))
+        {
+            rbPersonagem.gravityScale = 4f; // Subindo, mas o jogador soltou o botão
+        }
+        else
+        {
+            rbPersonagem.gravityScale = 1.8f; // Gravidade padrão
+        }
+    }
+
+    #endregion
+
+    #region Colisões e Gatilhos
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("Ceiling"))
+        // Verifica colisões com o chão para resetar o pulo
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            if (!NoChao)
-                PersonagemAnim.SetBool("Jump", false);
-
-            if (collision.gameObject.CompareTag("Ground"))
-            {
-                NoChao = true;
-                PuloDuplo = false;
-            }
+            personagemAnim.SetBool("Jump", false);
+            noChao = true;
+            puloDuplo = false;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Verifica o toque em moedas
         if (collision.gameObject.CompareTag("Moedas"))
         {
             collision.gameObject.SetActive(false);
-            ControladorPersonagem.Moedas++;
-            ControladorPersonagem.TextoMoeda.text = ControladorPersonagem.Moedas.ToString();
+            controladorPersonagem.Moedas++;
+            controladorPersonagem.TextoMoeda.text = controladorPersonagem.Moedas.ToString();
         }
     }
+
+    #endregion
 }

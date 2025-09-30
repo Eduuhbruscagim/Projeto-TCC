@@ -20,7 +20,7 @@ public class ParticleController : MonoBehaviour
     {
         Counter += Time.deltaTime;
 
-        if (personagem.NoChao && Mathf.Abs(rbPersonagem.velocity.x) > occurAfterVelocity)
+        if (personagem.EstaNoChao && Mathf.Abs(rbPersonagem.velocity.x) > occurAfterVelocity)
         {
             if (Counter > dustFormatioPeriod)
             {
